@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="/dist/tween.umd.js"></script>
+    <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <canvas id="bg">
+
+    </canvas>
+    <div class="bodybb">
+    <div class="menu">
+      <ul class="threeD-button-set" tabindex="-1" style="--x:13.075deg; --y:44.825deg;">
+        <li><button tabindex="0"  id="servicios">SERVICIOS</button></li>
+        <li><button tabindex="-1" id="contacto">CONTACTO</button></li>
+        <li><button tabindex="-1" id="nosotros">NOSOTROS</button></li>
+        <li><button tabindex="-1" id="clientes">CLIENTES</button></li>
+      </ul>
+    </div>  <!--
+    <div id="aboutus" class="threeD-button-set">
+      <ul>
+        <li>
+      <button>
+        <p>
+        Nuestra vocación es la creación de estrategias y contenidos diferentes y novedosos, alineados a las necesidades puntuales de cada cliente y creados a la medida. Para ello nos valemos tanto de medios tradicionales como de aquellos que están a la vanguardia de la tecnología. Nuestro campo de acción abarca desde la concepción de una campaña y una estrategia hasta la ejecución de cualquier esfuerzo de comunicación puntual.
+        </p>
+      </button>
+        </li>
+      </ul>     
+      </div> -->
+      <div id="writeme">
+        <ul id="redes" class="threeD-button-set" tabindex="-1" style="--x:13.075deg; --y:44.825deg;">
+          <li><button tabindex="-1" id="email">EMAIL</button></li>
+          <li><button tabindex="0"  id="wspp">WHATSAPP</button></li>
+          <li><button tabindex="-1" id="fb">FACEBOOK</button></li>
+
+        </ul>
+
+        <form method="POST" id="contactForm" name="contactForm" novalidate="novalidate">
+          <h1 class="textform">Contactanos</h1>
+          <br>
+          <div class="row">
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+          </div>
+
+          <div class="col-md-12">
+          <div class="form-group">
+          <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Mensaje"></textarea>
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group">
+          <input type="submit" value="Enviar" class="btn btn-primary">
+          <div class="submitting"></div>
+          </div>
+          </div>
+          </div>
+          </form>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
